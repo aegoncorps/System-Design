@@ -1,0 +1,14 @@
+<!-- @dsCard group="Ações" height=120 -->
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><title>Button — prévia</title></head>
+<body>
+<div id="root" class="ag-stack"></div>
+<script>
+var A = window.Aegon, h = React.createElement;
+ReactDOM.createRoot(document.getElementById("root")).render(h(React.Fragment,null,
+ h("div",{className:"ag-row",style:{padding:0}},h(A.Button,null,"Aprovar orçamento"),h(A.Button,{variant:"secondary",icon:"download"},"Exportar"),h(A.Button,{variant:"ghost",iconRight:"arrow-right"},"Ver contexto"),h(A.Button,{variant:"danger"},"Reprovar")),
+ h("div",{className:"ag-row",style:{padding:"12px 0 0"}},h(A.Button,{size:"sm",icon:"plus"},"Nova rubrica"),h(A.Button,{size:"lg"},"Encaminhar para aprovação"),h(A.Button,{disabled:true},"Salvar"))));
+</script>
+</body>
+</html>

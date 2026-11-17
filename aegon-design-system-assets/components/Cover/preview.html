@@ -1,0 +1,54 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Aegon</title>
+<style>
+  html, body { margin:0; height:100%; }
+  body { background:var(--canvas); color:var(--ink); font-family:var(--font-sans); overflow:hidden; }
+  .cover { position:relative; height:288px; overflow:hidden; }
+  .art { position:absolute; top:0; left:480px; width:480px; height:288px; overflow:hidden; }
+  .art svg { display:block; width:480px; height:288px; }
+  .wake { fill:var(--system-wake); }
+  .shadow { fill:var(--shadow-state); }
+  .yellow { fill:var(--pulse-yellow); }
+  .sky { fill:var(--signal-sky); }
+  .pulse { fill:var(--core-pulse); }
+  .slab { rx:var(--radius-xl); }
+  .blk { rx:var(--radius-lg); }
+  .words { position:absolute; left:var(--space-6); bottom:var(--space-6); max-width:440px; }
+  .name { margin:0; font-family:var(--font-display); font-weight:400; font-size:120px; line-height:.9; letter-spacing:-.02em; color:var(--ink); }
+  .tag { margin:var(--space-2) 0 0 6px; font-size:14px; line-height:20px; font-weight:600; color:var(--ink-muted); }
+</style>
+</head>
+<body>
+<div class="cover">
+<div class="art" aria-hidden="true">
+<svg viewBox="0 0 480 288" width="480" height="288">
+<!--
+  blocks      system-wake slab 192×336 bled top and bottom (the brand blue, largest) · shadow-state 256×104 · ui switch pill in system-wake 256×96 with core-pulse knob · pulse-yellow corner brackets · signal-sky pill 112×40 small
+  arrangement one tall blue slab with satellites, space-4 gutters, satellites on the space-6 grid
+  pattern     pills and corner brackets, from "O botão é a marca" and the cantoneiras: five space-5 toggle pills cut into the slab in core-pulse/shadow, one yellow corner frame around the switch
+  scales      sides in space-2 multiples; gutters space-4; pitch space-7; slab radius-xl, block radius-lg, pills rx = half height; brackets corner-stroke 8 at this scale
+-->
+<rect class="wake slab" x="0" y="-24" width="192" height="336" rx="24"/>
+<rect class="shadow" x="32" y="24" width="64" height="24" rx="12"/><circle class="pulse" cx="84" cy="36" r="8"/>
+<rect class="shadow" x="32" y="72" width="64" height="24" rx="12"/><circle class="pulse" cx="44" cy="84" r="8"/>
+<rect class="shadow" x="32" y="120" width="64" height="24" rx="12"/><circle class="pulse" cx="84" cy="132" r="8"/>
+<rect class="shadow" x="32" y="168" width="64" height="24" rx="12"/><circle class="pulse" cx="84" cy="180" r="8"/>
+<rect class="shadow" x="32" y="216" width="64" height="24" rx="12"/><circle class="pulse" cx="44" cy="228" r="8"/>
+<rect class="wake" x="224" y="48" width="224" height="80" rx="40"/>
+<circle class="pulse" cx="408" cy="88" r="30"/>
+<path class="yellow" d="M208 32h32v8h-24v24h-8zM464 32v32h-8V40h-24v-8zM208 144v-32h8v24h24v8zM464 144h-32v-8h24v-24h8z"/>
+<rect class="shadow blk" x="208" y="160" width="256" height="104" rx="16"/>
+<rect class="sky" x="384" y="176" width="112" height="40" rx="20"/>
+</svg>
+</div>
+<div class="words">
+<p class="name">Aegon</p>
+<p class="tag">Tudo se resolve no mesmo botão.</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!-- @dsCard group="Formulários" height=200 -->
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><title>TextField — prévia</title></head>
+<body>
+<div id="root" class="ag-stack"></div>
+<script>
+var A = window.Aegon, h = React.createElement;
+ReactDOM.createRoot(document.getElementById("root")).render(h("div",{style:{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(220px,1fr))",gap:16,width:"100%"}},
+ h(A.TextField,{label:"Fornecedor",placeholder:"Selecionar ou informar",required:true}),
+ h(A.TextField,{label:"Valor",prefix:"R$",placeholder:"0,00",inputMode:"decimal",hint:"Use vírgula para centavos."}),
+ h(A.TextField,{label:"Documento",defaultValue:"NF-e 9921",error:"Esta nota já foi lançada em OPX-TEC-014."})));
+</script>
+</body>
+</html>

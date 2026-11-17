@@ -1,0 +1,15 @@
+<!-- @dsCard group="Dados" height=150 -->
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><title>KpiCard — prévia</title></head>
+<body>
+<div id="root" class="ag-stack"></div>
+<script>
+var A = window.Aegon, h = React.createElement;
+ReactDOM.createRoot(document.getElementById("root")).render(h("div",{style:{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(220px,1fr))",gap:16,width:"100%"}},
+ h(A.KpiCard,{label:"Orçamento base 2026",value:"R$ 1.840.000",hint:"100% executado",progress:100}),
+ h(A.KpiCard,{label:"Proposta OPEX 2027",value:"R$ 2.015.400",delta:"+9,53%",tone:"info",hint:"vs. base"}),
+ h(A.KpiCard,{label:"Saldo comprometido",value:"R$ 1.428.900",delta:"70,8%",tone:"warning",hint:"alocado",progress:70.8})));
+</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!-- @dsCard group="Layout" height=460 -->
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><title>AppShell — prévia</title></head>
+<body>
+<div id="root" class=""></div>
+<script>
+var A = window.Aegon, h = React.createElement;
+ReactDOM.createRoot(document.getElementById("root")).render(h("div",{style:{height:440}},h(A.AppShell,{product:"OPEX",active:"aprov",title:"Fila de aprovações",eyebrow:"Decidir",
+ actions:h(React.Fragment,null,h(A.Button,{variant:"secondary",size:"sm",icon:"filter"},"Filtrar"),h(A.Button,{size:"sm",icon:"plus"},"Nova solicitação")),
+ nav:[{label:"Planejar",items:[{value:"orc",label:"Orçamento",icon:"wallet"},{value:"cen",label:"Cenários",icon:"bar-chart-3"}]},
+      {label:"Executar",items:[{value:"desp",label:"Despesas",icon:"receipt"},{value:"comp",label:"Compras",icon:"package"},{value:"atv",label:"Ativos",icon:"laptop"}]},
+      {label:"Decidir",items:[{value:"aprov",label:"Aprovações",icon:"circle-check",badge:2}]}]},
+ h(A.Stepper,{current:1}),
+ h(A.ApprovalCard,{kind:"Solicitação #884",sla:"4h",title:"Reclassificação orçamentária: TI → Operações",impact:"R$ 42.800,00",attachment:"NF-e 9921.pdf"}))));
+</script>
+</body>
+</html>

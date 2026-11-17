@@ -1,0 +1,14 @@
+<!-- @dsCard group="Formulários" height=120 -->
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><title>Select — prévia</title></head>
+<body>
+<div id="root" class="ag-stack"></div>
+<script>
+var A = window.Aegon, h = React.createElement;
+ReactDOM.createRoot(document.getElementById("root")).render(h("div",{style:{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(220px,1fr))",gap:16,width:"100%"}},
+ h(A.Select,{label:"Rubrica orçamentária",placeholder:"Selecionar…",options:["Infraestrutura cloud e IA","Licenças e produtividade SaaS","Marketing e branding"]}),
+ h(A.Select,{label:"Centro de custo",defaultValue:"TI",options:["TI","Operações","Financeiro"],hint:"Define quem aprova."})));
+</script>
+</body>
+</html>

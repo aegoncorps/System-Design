@@ -1,0 +1,12 @@
+<!-- @dsCard group="Status" height=96 -->
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><title>Badge — prévia</title></head>
+<body>
+<div id="root" class="ag-row"></div>
+<script>
+var A = window.Aegon, h = React.createElement;
+ReactDOM.createRoot(document.getElementById("root")).render(h(React.Fragment,null,["draft","pending","committed","approved","paid","exception","scenario"].map(function(s){return h(A.Badge,{key:s,status:s});}),h(A.Badge,{tone:"info",icon:false},"48 assentos")));
+</script>
+</body>
+</html>

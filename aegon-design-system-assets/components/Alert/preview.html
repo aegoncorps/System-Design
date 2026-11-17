@@ -1,0 +1,15 @@
+<!-- @dsCard group="Status" height=190 -->
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><title>Alert — prévia</title></head>
+<body>
+<div id="root" class="ag-stack"></div>
+<script>
+var A = window.Aegon, h = React.createElement;
+ReactDOM.createRoot(document.getElementById("root")).render(h(React.Fragment,null,
+ h(A.Alert,{tone:"danger",title:"Rubrica acima do planejado em 7,4%",action:h(A.Button,{size:"sm",variant:"secondary"},"Justificar")},"Marketing e branding comprometeu R$ 268.500 de R$ 250.000."),
+ h(A.Alert,{tone:"warning",title:"2 decisões aguardam você"},"A mais antiga vence em 4 horas."),
+ h(A.Alert,{tone:"success",title:"Orçamento 2027 aprovado"})));
+</script>
+</body>
+</html>

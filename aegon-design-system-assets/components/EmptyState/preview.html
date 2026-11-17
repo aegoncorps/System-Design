@@ -1,0 +1,12 @@
+<!-- @dsCard group="Superfícies" height=290 -->
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><title>EmptyState — prévia</title></head>
+<body>
+<div id="root" class="ag-stack"></div>
+<script>
+var A = window.Aegon, h = React.createElement;
+ReactDOM.createRoot(document.getElementById("root")).render(h(A.EmptyState,{title:"Nenhuma despesa neste mês",description:"Registre a primeira despesa e anexe a nota. Ela entra no saldo da rubrica na hora.",action:h(A.Button,{icon:"plus"},"Registrar despesa")}));
+</script>
+</body>
+</html>

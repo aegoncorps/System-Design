@@ -1,0 +1,14 @@
+<!-- @dsCard group="Produto" height=190 -->
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"><title>ApprovalCard — prévia</title></head>
+<body>
+<div id="root" class="ag-stack"></div>
+<script>
+var A = window.Aegon, h = React.createElement;
+ReactDOM.createRoot(document.getElementById("root")).render(h("div",{style:{display:"grid",gridTemplateColumns:"repeat(auto-fit,minmax(300px,1fr))",gap:16,width:"100%"}},
+ h(A.ApprovalCard,{kind:"Solicitação #884",sla:"4h",title:"Reclassificação orçamentária: TI → Operações",impact:"R$ 42.800,00",attachment:"NF-e 9921.pdf"}),
+ h(A.ApprovalCard,{kind:"Compra",title:"Aquisição de 12 notebooks",impact:"R$ 86.400,00",attachment:"Orçamento fornecedor.pdf"})));
+</script>
+</body>
+</html>
